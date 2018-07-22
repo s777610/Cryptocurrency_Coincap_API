@@ -45,7 +45,7 @@ while True:
             last_updated = currency['last_updated']
             symbol = currency['symbol']
             quotes = currency['quotes'][convert]
-            price = quotes['price'] 
+            price = quotes['price']
 
             if float(price) >= float(amount) and symbol not in already_hit_symbols:
                 os.system('say ' + name + 'hit' + amount)
